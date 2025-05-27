@@ -50,40 +50,6 @@ guard let mapped = json["mapped"] as? [String: [String: String]],
 
 var output = "import SwiftUI\n\n"
 
-output += """
-extension UIColor {
-    fileprivate convenience init(dark: String, light: String) {
-#if os(iOS) || os(tvOS)
-        self.init { traits -> UIColor in
-            if traits.userInterfaceStyle == .dark {
-                return UIColor(hex: dark)
-            } else {
-                return UIColor(hex: light)
-            }
-        }
-#else
-        self.init(hex: dark)
-#endif
-    }
-
-    fileprivate convenience init(hex: String) {
-        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines).replacingOccurrences(of: "#", with: "")
-        var rgb: UInt64 = 0
-        Scanner(string: hexSanitized).scanHexInt64(&rgb)
-
-        let a, r, g, b: UInt64
-        switch hexSanitized.count {
-        case 8: (a, r, g, b) = (rgb >> 24, (rgb >> 16) & 0xff, (rgb >> 8) & 0xff, rgb & 0xff)
-        case 6: (a, r, g, b) = (255, rgb >> 16, (rgb >> 8) & 0xff, rgb & 0xff)
-        default: (a, r, g, b) = (255, 0, 0, 0)
-        }
-
-        self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
-    }
-}
-
-"""
-
 output += "\nextension Color {\n"
 for (name, color) in mapped.sorted(by: { a, b in a.0 < b.0 }) {
     output += """
