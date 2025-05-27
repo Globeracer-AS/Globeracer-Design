@@ -375,13 +375,13 @@ extension Color {
 
 public enum Design {
     public struct Border: Hashable, Sendable {
-        let value: CGFloat
+        public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
         public static let widthNone = Self(0.0)
         public static let widthDefault = Self(2.0)
     }
     public struct Dropshadow: Hashable, Sendable {
-        let value: CGFloat
+        public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
         public static let positionNone = Self(0.0)
         public static let positionSm = Self(2.0)
@@ -389,7 +389,7 @@ public enum Design {
         public static let opacity = Self(30.0)
     }
     public struct Font: Hashable, Sendable {
-        let value: CGFloat
+        public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
         public static let sizeBodyXSmall = Self(8.0)
         public static let sizeBodySmall = Self(12.0)
@@ -403,14 +403,14 @@ public enum Design {
         public static let sizeHeading5xLarge = Self(64.0)
     }
     public struct Icon: Hashable, Sendable {
-        let value: CGFloat
+        public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
         public static let sizeSm = Self(16.0)
         public static let sizeMd = Self(24.0)
         public static let sizeLg = Self(32.0)
     }
     public struct Line: Hashable, Sendable {
-        let value: CGFloat
+        public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
         public static let heightBodyXSm = Self(10.0)
         public static let heightBodySm = Self(14.0)
@@ -424,7 +424,7 @@ public enum Design {
         public static let heightHeading5xLg = Self(76.0)
     }
     public struct Paragraph: Hashable, Sendable {
-        let value: CGFloat
+        public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
         public static let spacingBodyXSm = Self(2.0)
         public static let spacingBodySm = Self(4.0)
@@ -438,7 +438,7 @@ public enum Design {
         public static let spacingHeading5xLg = Self(48.0)
     }
     public struct Spacing: Hashable, Sendable {
-        let value: CGFloat
+        public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
         public static let none = Self(0.0)
         public static let xSm = Self(4.0)

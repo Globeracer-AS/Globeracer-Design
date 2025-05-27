@@ -107,7 +107,7 @@ output += "public enum Design {\n"
 for (type, values) in groupedEnums.sorted(by: { a, b in a.0 < b.0 }) {
     output += """
     public struct \(type.prefix(1).uppercased() + type.dropFirst()): Hashable, Sendable {
-        let value: CGFloat
+        public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
 
 """
