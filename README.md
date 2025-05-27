@@ -15,5 +15,7 @@ Steps to export:
 7. Overwrite the contents of 'tokens.json' with the contents of your clipboard
 8. **[OPTIONAL]** If you're feeling particularly nice, run the script `format.sh` to make the contents of `tokens.json` readable by humans
    _(this requires `jq` to be installed)_
+9. **[OPTIONAL]** If you have Xcode installed, run the script `convert.swift`. If not, notify someone that can take it from there.
+10. Commit & push
 
 ![image](figmaExport.png)
