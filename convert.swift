@@ -105,9 +105,14 @@ for (key, values) in responsive.sorted(by: { a, b in a.0 < b.0 }) {
 
 output += "public enum Design {\n"
 for (type, values) in groupedEnums.sorted(by: { a, b in a.0 < b.0 }) {
-    output += "    public enum \(type.prefix(1).uppercased() + type.dropFirst()): CGFloat {\n"
+    output += """
+    public struct \(type.prefix(1).uppercased() + type.dropFirst()): Hashable, Sendable {
+        let value: CGFloat
+        private init(_ value: CGFloat) { self.value = value }
+
+"""
     for (caseName, value) in values.sorted(by: { $0.1 < $1.1 }) {
-        output += "        case \(caseName) = \(value)\n"
+        output += "        static let \(caseName) = Self(\(value))\n"
     }
     output += "    }\n"
 }
