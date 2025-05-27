@@ -78,7 +78,7 @@ for (type, values) in groupedEnums.sorted(by: { a, b in a.0 < b.0 }) {
 
 """
     for (caseName, value) in values.sorted(by: { $0.1 < $1.1 }) {
-        output += "        // \(value)\n"
+        output += "        /// \(value)\n"
         output += "        public static let \(caseName) = Self(\(value))\n"
     }
     output += "    }\n"

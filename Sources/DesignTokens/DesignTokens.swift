@@ -347,119 +347,119 @@ public enum Design {
     public struct Border: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
-        // 0.0
+        /// 0.0
         public static let widthNone = Self(0.0)
-        // 2.0
+        /// 2.0
         public static let widthDefault = Self(2.0)
     }
     public struct Dropshadow: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
-        // 0.0
+        /// 0.0
         public static let positionNone = Self(0.0)
-        // 2.0
+        /// 2.0
         public static let positionSm = Self(2.0)
-        // 16.0
+        /// 16.0
         public static let blurDefault = Self(16.0)
-        // 30.0
+        /// 30.0
         public static let opacity = Self(30.0)
     }
     public struct Font: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
-        // 8.0
+        /// 8.0
         public static let sizeBodyXSmall = Self(8.0)
-        // 12.0
+        /// 12.0
         public static let sizeBodySmall = Self(12.0)
-        // 16.0
+        /// 16.0
         public static let sizeBodyBase = Self(16.0)
-        // 20.0
+        /// 20.0
         public static let sizeBodyLarge = Self(20.0)
-        // 20.0
+        /// 20.0
         public static let sizeHeadingLarge = Self(20.0)
-        // 24.0
+        /// 24.0
         public static let sizeHeadingXLarge = Self(24.0)
-        // 32.0
+        /// 32.0
         public static let sizeHeading2xLarge = Self(32.0)
-        // 40.0
+        /// 40.0
         public static let sizeHeading3xLarge = Self(40.0)
-        // 48.0
+        /// 48.0
         public static let sizeHeading4xLarge = Self(48.0)
-        // 64.0
+        /// 64.0
         public static let sizeHeading5xLarge = Self(64.0)
     }
     public struct Icon: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
-        // 16.0
+        /// 16.0
         public static let sizeSm = Self(16.0)
-        // 24.0
+        /// 24.0
         public static let sizeMd = Self(24.0)
-        // 32.0
+        /// 32.0
         public static let sizeLg = Self(32.0)
     }
     public struct Line: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
-        // 10.0
+        /// 10.0
         public static let heightBodyXSm = Self(10.0)
-        // 14.0
+        /// 14.0
         public static let heightBodySm = Self(14.0)
-        // 22.0
+        /// 22.0
         public static let heightBodyMd = Self(22.0)
-        // 24.0
+        /// 24.0
         public static let heightHeadingLg = Self(24.0)
-        // 26.0
+        /// 26.0
         public static let heightBodyLg = Self(26.0)
-        // 28.0
+        /// 28.0
         public static let heightHeadingXLg = Self(28.0)
-        // 36.0
+        /// 36.0
         public static let heightHeading2xLg = Self(36.0)
-        // 48.0
+        /// 48.0
         public static let heightHeading3xLg = Self(48.0)
-        // 56.0
+        /// 56.0
         public static let heightHeading4xLg = Self(56.0)
-        // 76.0
+        /// 76.0
         public static let heightHeading5xLg = Self(76.0)
     }
     public struct Paragraph: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
-        // 2.0
+        /// 2.0
         public static let spacingBodyXSm = Self(2.0)
-        // 4.0
+        /// 4.0
         public static let spacingBodySm = Self(4.0)
-        // 6.0
+        /// 6.0
         public static let spacingBodyMd = Self(6.0)
-        // 8.0
+        /// 8.0
         public static let spacingBodyLg = Self(8.0)
-        // 16.0
+        /// 16.0
         public static let spacingHeadingLg = Self(16.0)
-        // 24.0
+        /// 24.0
         public static let spacingHeadingXLg = Self(24.0)
-        // 32.0
+        /// 32.0
         public static let spacingHeading2xLg = Self(32.0)
-        // 36.0
+        /// 36.0
         public static let spacingHeading3xLg = Self(36.0)
-        // 40.0
+        /// 40.0
         public static let spacingHeading4xLg = Self(40.0)
-        // 48.0
+        /// 48.0
         public static let spacingHeading5xLg = Self(48.0)
     }
     public struct Spacing: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
-        // 0.0
+        /// 0.0
         public static let none = Self(0.0)
-        // 4.0
+        /// 4.0
         public static let xSm = Self(4.0)
-        // 8.0
+        /// 8.0
         public static let sm = Self(8.0)
-        // 16.0
+        /// 16.0
         public static let base = Self(16.0)
-        // 24.0
+        /// 24.0
         public static let lg = Self(24.0)
-        // 32.0
+        /// 32.0
         public static let xLg = Self(32.0)
     }
 }
