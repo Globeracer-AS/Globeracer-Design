@@ -1,0 +1,7 @@
+#!/bin/bash
+
+which swift > /dev/null 2>&1 || (echo "Xcode Command Line Tools is not installed, unable to perform conversion."; exit 1)
+
+./convert_ios.swift
+./convert_android.swift
+
