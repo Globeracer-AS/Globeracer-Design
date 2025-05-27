@@ -55,7 +55,7 @@ var colorsXML = """
 
 """
 
-for (name, val) in mapped {
+for (name, val) in mapped.sorted(by: { a, b in a.0 < b.0 }) {
     let light = sanitizeColor(val["light"] ?? "#FFFFFF")
     let dark = sanitizeColor(val["dark"] ?? "#000000")
     
@@ -73,7 +73,7 @@ var dimensXML = """
 
 """
 
-for (key, val) in responsive {
+for (key, val) in responsive.sorted(by: { a, b in a.0 < b.0 }) {
     guard let mobile = val["mobile"] else { continue }
 
     // Convert keys to kebab-case
