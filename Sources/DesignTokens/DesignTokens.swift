@@ -364,39 +364,39 @@ public enum Design {
         /// 30.0
         public static let opacity = Self(30.0)
     }
-    public struct Font: Hashable, Sendable {
+    public struct FontSize: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
         /// 8.0
-        public static let sizeBodyXSmall = Self(8.0)
+        public static let bodyXSmall = Self(8.0)
         /// 12.0
-        public static let sizeBodySmall = Self(12.0)
+        public static let bodySmall = Self(12.0)
         /// 16.0
-        public static let sizeBodyBase = Self(16.0)
+        public static let bodyBase = Self(16.0)
         /// 20.0
-        public static let sizeBodyLarge = Self(20.0)
+        public static let bodyLarge = Self(20.0)
         /// 20.0
-        public static let sizeHeadingLarge = Self(20.0)
+        public static let headingLarge = Self(20.0)
         /// 24.0
-        public static let sizeHeadingXLarge = Self(24.0)
+        public static let headingXLarge = Self(24.0)
         /// 32.0
-        public static let sizeHeading2xLarge = Self(32.0)
+        public static let heading2xLarge = Self(32.0)
         /// 40.0
-        public static let sizeHeading3xLarge = Self(40.0)
+        public static let heading3xLarge = Self(40.0)
         /// 48.0
-        public static let sizeHeading4xLarge = Self(48.0)
+        public static let heading4xLarge = Self(48.0)
         /// 64.0
-        public static let sizeHeading5xLarge = Self(64.0)
+        public static let heading5xLarge = Self(64.0)
     }
-    public struct Icon: Hashable, Sendable {
+    public struct IconSize: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
         /// 16.0
-        public static let sizeSm = Self(16.0)
+        public static let sm = Self(16.0)
         /// 24.0
-        public static let sizeMd = Self(24.0)
+        public static let md = Self(24.0)
         /// 32.0
-        public static let sizeLg = Self(32.0)
+        public static let lg = Self(32.0)
     }
     public struct Line: Hashable, Sendable {
         public let value: CGFloat

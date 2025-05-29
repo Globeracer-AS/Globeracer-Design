@@ -24,7 +24,7 @@ func camelToEnumCase(_ key: String) -> String {
 }
 
 func enumName(for key: String) -> (String, String)? {
-    let pattern = #"^([a-z]+)([A-Z].+)$"#
+    let pattern = #"^([a-z]+(?:Size)?)([A-Z].+)$"#
     let regex = try! NSRegularExpression(pattern: pattern)
     guard let match = regex.firstMatch(in: key, range: NSRange(key.startIndex..., in: key)) else {
         return nil
