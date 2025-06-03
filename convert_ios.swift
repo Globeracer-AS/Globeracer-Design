@@ -52,9 +52,12 @@ var output = "import SwiftUI\n\n"
 
 output += "\nextension Color {\n"
 for (name, color) in mapped.sorted(by: { a, b in a.0 < b.0 }) {
+    guard let light = color["light"], let dark = color["dark"] else {
+        fatalError("Color '\(name)' missing either 'light' or 'dark'")
+    }
     output += """
     public static var \(name): Color {
-        Color(UIColor(dark: "\(color["dark"] ?? "#000000")", light: "\(color["light"] ?? "#FFFFFF")"))
+        Color(UIColor(dark: "\(dark)", light: "\(light)"))
     }
 
 """
