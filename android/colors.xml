@@ -38,9 +38,11 @@
     <!-- Dark variant: #FF3a5d85 -->    <color name="iconOnActionPrimary">#FF313213</color>
     <!-- Dark variant: #FF313213 -->    <color name="iconOnActionSecondary">#FFedf2f7</color>
     <!-- Dark variant: #FFedf2f7 -->    <color name="iconOnActionSuccess">#FF025418</color>
-    <!-- Dark variant: #FF025418 -->    <color name="iconOnActionTransparentError">#FFff2200</color>
+    <!-- Dark variant: #FF025418 -->    <color name="iconOnActionTransparent">#FF1c1e21</color>
+    <!-- Dark variant: #FF1c1e21 -->    <color name="iconOnActionTransparentError">#FFff2200</color>
     <!-- Dark variant: #FFff2200 -->    <color name="iconOnActionTransparentErrorHover">#FF991400</color>
-    <!-- Dark variant: #FF991400 -->    <color name="iconOnActionWarning">#FF994c00</color>
+    <!-- Dark variant: #FF991400 -->    <color name="iconOnActionTransparentInverted">#FFffffff</color>
+    <!-- Dark variant: #FFffffff -->    <color name="iconOnActionWarning">#FF994c00</color>
     <!-- Dark variant: #FF994c00 -->    <color name="iconOnDisabled">#1c1e2166</color>
     <!-- Dark variant: #1c1e2166 -->    <color name="iconPrimary">#FF1c1e21</color>
     <!-- Dark variant: #FF1c1e21 -->    <color name="iconPrimaryInverted">#FFf1f2f3</color>
@@ -55,8 +57,8 @@
     <!-- Dark variant: #FF3a5d85 -->    <color name="surfaceActionSecondaryHover">#FF29415d</color>
     <!-- Dark variant: #FF29415d -->    <color name="surfaceActionTransparent">#ffffff00</color>
     <!-- Dark variant: #ffffff00 -->    <color name="surfaceActionTransparentHover">#1c1e2119</color>
-    <!-- Dark variant: #f1f2f333 -->    <color name="surfaceDisabled">#FFd4d6d8</color>
-    <!-- Dark variant: #FF3d4247 -->    <color name="surfaceError">#FFfceae8</color>
+    <!-- Dark variant: #f1f2f333 -->    <color name="surfaceDisabled">#f1f2f366</color>
+    <!-- Dark variant: #1c1e2166 -->    <color name="surfaceError">#FFfceae8</color>
     <!-- Dark variant: #FF330600 -->    <color name="surfaceErrorHover">#FFf9d6d1</color>
     <!-- Dark variant: #FF190300 -->    <color name="surfaceInfo">#FFe5f6ff</color>
     <!-- Dark variant: #FF004366 -->    <color name="surfaceInfographicsAccent">#FF3a5d85</color>
@@ -71,7 +73,8 @@
     <!-- Dark variant: #f1f2f3cc -->    <color name="surfaceOverlayFadeSolid">#FFffffff</color>
     <!-- Dark variant: #FF000000 -->    <color name="surfaceOverlayFadeTransparent">#f1f2f300</color>
     <!-- Dark variant: #1c1e2100 -->    <color name="surfacePage">#FFf1f2f3</color>
-    <!-- Dark variant: #FF1c1e21 -->    <color name="surfaceSuccess">#FFe8fced</color>
+    <!-- Dark variant: #FF1c1e21 -->    <color name="surfaceSelected">#FF989ea3</color>
+    <!-- Dark variant: #FF7b8188 -->    <color name="surfaceSuccess">#FFe8fced</color>
     <!-- Dark variant: #FF01310e -->    <color name="surfaceSuccessHover">#FFcffbdb</color>
     <!-- Dark variant: #FF001807 -->    <color name="surfaceToggleGroupDefault">#1c1e2119</color>
     <!-- Dark variant: #1c1e2119 -->    <color name="surfaceWarning">#FFfff2e5</color>
@@ -106,7 +109,8 @@
     <!-- Dark variant: #FFcffbdb -->    <color name="textOnActionTransparent">#FF1c1e21</color>
     <!-- Dark variant: #FF1c1e21 -->    <color name="textOnActionTransparentError">#FFff2200</color>
     <!-- Dark variant: #FFff2200 -->    <color name="textOnActionTransparentErrorHover">#FF991400</color>
-    <!-- Dark variant: #FF991400 -->    <color name="textOnActionWarning">#FF994c00</color>
+    <!-- Dark variant: #FF991400 -->    <color name="textOnActionTransparentInverted">#FFffffff</color>
+    <!-- Dark variant: #FFffffff -->    <color name="textOnActionWarning">#FF994c00</color>
     <!-- Dark variant: #FFffcc99 -->    <color name="textOnActionWarningHover">#FF663300</color>
     <!-- Dark variant: #FFffe5cc -->    <color name="textPrimary">#FF1c1e21</color>
     <!-- Dark variant: #FFffffff -->    <color name="textPrimaryInverted">#FFffffff</color>

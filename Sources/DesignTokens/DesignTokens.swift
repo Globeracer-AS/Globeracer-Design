@@ -116,11 +116,17 @@ extension Color {
     public static var iconOnActionSuccess: Color {
         Color(UIColor(dark: "#025418", light: "#025418"))
     }
+    public static var iconOnActionTransparent: Color {
+        Color(UIColor(dark: "#1c1e21", light: "#1c1e21"))
+    }
     public static var iconOnActionTransparentError: Color {
         Color(UIColor(dark: "#ff2200", light: "#ff2200"))
     }
     public static var iconOnActionTransparentErrorHover: Color {
         Color(UIColor(dark: "#991400", light: "#991400"))
+    }
+    public static var iconOnActionTransparentInverted: Color {
+        Color(UIColor(dark: "#ffffff", light: "#ffffff"))
     }
     public static var iconOnActionWarning: Color {
         Color(UIColor(dark: "#994c00", light: "#994c00"))
@@ -168,7 +174,7 @@ extension Color {
         Color(UIColor(dark: "#f1f2f333", light: "#1c1e2119"))
     }
     public static var surfaceDisabled: Color {
-        Color(UIColor(dark: "#3d4247", light: "#d4d6d8"))
+        Color(UIColor(dark: "#1c1e2166", light: "#f1f2f366"))
     }
     public static var surfaceError: Color {
         Color(UIColor(dark: "#330600", light: "#fceae8"))
@@ -214,6 +220,9 @@ extension Color {
     }
     public static var surfacePage: Color {
         Color(UIColor(dark: "#1c1e21", light: "#f1f2f3"))
+    }
+    public static var surfaceSelected: Color {
+        Color(UIColor(dark: "#7b8188", light: "#989ea3"))
     }
     public static var surfaceSuccess: Color {
         Color(UIColor(dark: "#01310e", light: "#e8fced"))
@@ -319,6 +328,9 @@ extension Color {
     }
     public static var textOnActionTransparentErrorHover: Color {
         Color(UIColor(dark: "#991400", light: "#991400"))
+    }
+    public static var textOnActionTransparentInverted: Color {
+        Color(UIColor(dark: "#ffffff", light: "#ffffff"))
     }
     public static var textOnActionWarning: Color {
         Color(UIColor(dark: "#ffcc99", light: "#994c00"))
