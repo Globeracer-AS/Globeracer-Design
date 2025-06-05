@@ -2,8 +2,9 @@
 <resources>
     <dimen name="border_width_default">2dp</dimen>
     <dimen name="border_width_none">0dp</dimen>
-    <dimen name="dropshadow_blur_default">16dp</dimen>
+    <dimen name="dropshadow_blur_default">8dp</dimen>
     <dimen name="dropshadow_opacity">30dp</dimen>
+    <dimen name="dropshadow_position_md">4dp</dimen>
     <dimen name="dropshadow_position_none">0dp</dimen>
     <dimen name="dropshadow_position_sm">2dp</dimen>
     <dimen name="font_size_body_base">16dp</dimen>
@@ -19,6 +20,7 @@
     <dimen name="icon_size_lg">32dp</dimen>
     <dimen name="icon_size_md">24dp</dimen>
     <dimen name="icon_size_sm">16dp</dimen>
+    <dimen name="icon_size_xsm">12dp</dimen>
     <dimen name="line_height_body_lg">26dp</dimen>
     <dimen name="line_height_body_md">22dp</dimen>
     <dimen name="line_height_body_sm">14dp</dimen>
