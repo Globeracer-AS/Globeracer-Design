@@ -53,26 +53,53 @@ extension Color {
     public static var borderInfographicsAccent: Color {
         Color(UIColor(dark: "#f4fc61", light: "#f4fc61"))
     }
+    public static var borderInfographicsColorBlue: Color {
+        Color(UIColor(dark: "#009ee2", light: "#009ee2"))
+    }
+    public static var borderInfographicsColorBluePale: Color {
+        Color(UIColor(dark: "#44c7ff", light: "#44c7ff"))
+    }
+    public static var borderInfographicsColorGray: Color {
+        Color(UIColor(dark: "#b6babe", light: "#989ea3"))
+    }
+    public static var borderInfographicsColorGreen: Color {
+        Color(UIColor(dark: "#00bc74", light: "#00bc74"))
+    }
+    public static var borderInfographicsColorGreenPale: Color {
+        Color(UIColor(dark: "#71ecbd", light: "#71ecbd"))
+    }
+    public static var borderInfographicsColorRed: Color {
+        Color(UIColor(dark: "#f54d28", light: "#f54d28"))
+    }
+    public static var borderInfographicsColorRedPale: Color {
+        Color(UIColor(dark: "#f78168", light: "#f78168"))
+    }
+    public static var borderInfographicsColorYellow: Color {
+        Color(UIColor(dark: "#f1b000", light: "#f1b000"))
+    }
+    public static var borderInfographicsColorYellowPale: Color {
+        Color(UIColor(dark: "#fdd468", light: "#fdd468"))
+    }
     public static var borderInfographicsDefault: Color {
-        Color(UIColor(dark: "#a5b6ca", light: "#a5b6ca"))
+        Color(UIColor(dark: "#3a5d85", light: "#3a5d85"))
     }
     public static var borderInfographicsTrack: Color {
-        Color(UIColor(dark: "#f1f2f319", light: "#1c1e2166"))
+        Color(UIColor(dark: "#f1f2f319", light: "#1c1e2119"))
     }
     public static var borderInformation: Color {
         Color(UIColor(dark: "#00aaff", light: "#99ddff"))
     }
     public static var borderOpacityPrimary: Color {
-        Color(UIColor(dark: "#f1f2f366", light: "#1c1e2166"))
+        Color(UIColor(dark: "#f1f2f34c", light: "#1c1e214c"))
     }
     public static var borderOpacityPrimaryDark: Color {
-        Color(UIColor(dark: "#1c1e217f", light: "#1c1e217f"))
+        Color(UIColor(dark: "#1c1e214c", light: "#1c1e214c"))
     }
     public static var borderOpacityPrimaryInverted: Color {
-        Color(UIColor(dark: "#1c1e217f", light: "#f1f2f37f"))
+        Color(UIColor(dark: "#1c1e214c", light: "#f1f2f34c"))
     }
     public static var borderOpacityPrimaryLight: Color {
-        Color(UIColor(dark: "#f1f2f37f", light: "#f1f2f37f"))
+        Color(UIColor(dark: "#f1f2f34c", light: "#f1f2f34c"))
     }
     public static var borderPrimary: Color {
         Color(UIColor(dark: "#3d4247", light: "#d4d6d8"))
@@ -107,20 +134,20 @@ extension Color {
     public static var iconOnActionError: Color {
         Color(UIColor(dark: "#ff7a66", light: "#cc1b00"))
     }
-    public static var iconOnActionHover: Color {
-        Color(UIColor(dark: "#f4fc61", light: "#313213"))
-    }
     public static var iconOnActionLink: Color {
-        Color(UIColor(dark: "#000000", light: "#000000"))
+        Color(UIColor(dark: "#ffffff", light: "#000000"))
+    }
+    public static var iconOnActionLinkActive: Color {
+        Color(UIColor(dark: "#7a7e31", light: "#7a7e31"))
     }
     public static var iconOnActionLinkHover: Color {
-        Color(UIColor(dark: "#000000", light: "#000000"))
+        Color(UIColor(dark: "#f4fc61", light: "#c3ca4e"))
     }
     public static var iconOnActionOutline: Color {
         Color(UIColor(dark: "#f4fc61", light: "#7a7e31"))
     }
     public static var iconOnActionOutlineNeutral: Color {
-        Color(UIColor(dark: "#3a5d85", light: "#3a5d85"))
+        Color(UIColor(dark: "#f1f2f3", light: "#3a5d85"))
     }
     public static var iconOnActionPrimary: Color {
         Color(UIColor(dark: "#313213", light: "#313213"))
@@ -132,19 +159,34 @@ extension Color {
         Color(UIColor(dark: "#025418", light: "#025418"))
     }
     public static var iconOnActionTransparent: Color {
-        Color(UIColor(dark: "#000000", light: "#000000"))
+        Color(UIColor(dark: "#ffffff", light: "#000000"))
+    }
+    public static var iconOnActionTransparentActive: Color {
+        Color(UIColor(dark: "#4d535a", light: "#b6babe"))
     }
     public static var iconOnActionTransparentError: Color {
-        Color(UIColor(dark: "#cc1b00", light: "#cc1b00"))
+        Color(UIColor(dark: "#ff2200", light: "#ff2200"))
+    }
+    public static var iconOnActionTransparentErrorActive: Color {
+        Color(UIColor(dark: "#ffa699", light: "#660d00"))
     }
     public static var iconOnActionTransparentErrorHover: Color {
-        Color(UIColor(dark: "#991400", light: "#991400"))
+        Color(UIColor(dark: "#ff7a66", light: "#cc1b00"))
+    }
+    public static var iconOnActionTransparentHover: Color {
+        Color(UIColor(dark: "#b6babe", light: "#7b8188"))
     }
     public static var iconOnActionTransparentInverted: Color {
-        Color(UIColor(dark: "#ffffff", light: "#ffffff"))
+        Color(UIColor(dark: "#000000", light: "#ffffff"))
+    }
+    public static var iconOnActionTransparentInvertedActive: Color {
+        Color(UIColor(dark: "#ffffff", light: "#4d535a"))
+    }
+    public static var iconOnActionTransparentInvertedHover: Color {
+        Color(UIColor(dark: "#5d656d", light: "#989ea3"))
     }
     public static var iconOnActionWarning: Color {
-        Color(UIColor(dark: "#994c00", light: "#994c00"))
+        Color(UIColor(dark: "#ffcc99", light: "#994c00"))
     }
     public static var iconOnDisabled: Color {
         Color(UIColor(dark: "#f1f2f37f", light: "#1c1e2166"))
@@ -155,14 +197,29 @@ extension Color {
     public static var iconPrimaryInverted: Color {
         Color(UIColor(dark: "#1c1e21", light: "#f1f2f3"))
     }
+    public static var iconPrimaryLight: Color {
+        Color(UIColor(dark: "#ffffff", light: "#ffffff"))
+    }
     public static var iconSecondary: Color {
         Color(UIColor(dark: "#d4d6d8", light: "#4d535a"))
     }
     public static var iconWarning: Color {
         Color(UIColor(dark: "#ff8001", light: "#ff8001"))
     }
+    public static var surfaceActionError: Color {
+        Color(UIColor(dark: "#330600", light: "#fceae8"))
+    }
+    public static var surfaceActionErrorActive: Color {
+        Color(UIColor(dark: "#660d00", light: "#ff7a66"))
+    }
+    public static var surfaceActionErrorHover: Color {
+        Color(UIColor(dark: "#190300", light: "#f9d6d1"))
+    }
     public static var surfaceActionOutline: Color {
         Color(UIColor(dark: "#1c1e21", light: "#ffffff00"))
+    }
+    public static var surfaceActionOutlineActive: Color {
+        Color(UIColor(dark: "#7b8188", light: "#f4fc61"))
     }
     public static var surfaceActionOutlineHover: Color {
         Color(UIColor(dark: "#3d4247", light: "#fbfec0"))
@@ -170,26 +227,56 @@ extension Color {
     public static var surfaceActionOutlineNeutral: Color {
         Color(UIColor(dark: "#1c1e21", light: "#ffffff00"))
     }
+    public static var surfaceActionOutlineNeutralActive: Color {
+        Color(UIColor(dark: "#f1f2f333", light: "#a5b6ca"))
+    }
     public static var surfaceActionOutlineNeutralHover: Color {
         Color(UIColor(dark: "#f1f2f30c", light: "#c9d4e0"))
     }
     public static var surfaceActionPrimary: Color {
         Color(UIColor(dark: "#f4fc61", light: "#f4fc61"))
     }
+    public static var surfaceActionPrimaryActive: Color {
+        Color(UIColor(dark: "#7a7e31", light: "#c3ca4e"))
+    }
     public static var surfaceActionPrimaryHover: Color {
-        Color(UIColor(dark: "#c3ca4e", light: "#c3ca4e"))
+        Color(UIColor(dark: "#c3ca4e", light: "#f4fc61"))
     }
     public static var surfaceActionSecondary: Color {
         Color(UIColor(dark: "#3a5d85", light: "#3a5d85"))
     }
+    public static var surfaceActionSecondaryActive: Color {
+        Color(UIColor(dark: "#5d7b9c", light: "#5d7b9c"))
+    }
     public static var surfaceActionSecondaryHover: Color {
         Color(UIColor(dark: "#29415d", light: "#29415d"))
+    }
+    public static var surfaceActionSuccess: Color {
+        Color(UIColor(dark: "#01310e", light: "#e8fced"))
+    }
+    public static var surfaceActionSuccessActive: Color {
+        Color(UIColor(dark: "#025418", light: "#cffbdb"))
+    }
+    public static var surfaceActionSuccessHover: Color {
+        Color(UIColor(dark: "#001807", light: "#cffbdb"))
     }
     public static var surfaceActionTransparent: Color {
         Color(UIColor(dark: "#ffffff00", light: "#ffffff00"))
     }
+    public static var surfaceActionTransparentActive: Color {
+        Color(UIColor(dark: "#f1f2f34c", light: "#1c1e2133"))
+    }
     public static var surfaceActionTransparentHover: Color {
         Color(UIColor(dark: "#f1f2f333", light: "#1c1e2119"))
+    }
+    public static var surfaceActionWarning: Color {
+        Color(UIColor(dark: "#331900", light: "#fff2e5"))
+    }
+    public static var surfaceActionWarningActive: Color {
+        Color(UIColor(dark: "#663300", light: "#ffe5cc"))
+    }
+    public static var surfaceActionWarningHover: Color {
+        Color(UIColor(dark: "#190c00", light: "#ffe5cc"))
     }
     public static var surfaceDisabled: Color {
         Color(UIColor(dark: "#1c1e2166", light: "#f1f2f366"))
@@ -197,20 +284,50 @@ extension Color {
     public static var surfaceError: Color {
         Color(UIColor(dark: "#330600", light: "#fceae8"))
     }
-    public static var surfaceErrorHover: Color {
+    public static var surfaceError2: Color {
+        Color(UIColor(dark: "#330600", light: "#fceae8"))
+    }
+    public static var surfaceErrorHover2: Color {
         Color(UIColor(dark: "#190300", light: "#f9d6d1"))
     }
     public static var surfaceInfo: Color {
         Color(UIColor(dark: "#004366", light: "#e5f6ff"))
     }
     public static var surfaceInfographicsAccent: Color {
-        Color(UIColor(dark: "#f4fc61", light: "#3a5d85"))
+        Color(UIColor(dark: "#f4fc61", light: "#f4fc61"))
     }
     public static var surfaceInfographicsAccentDisabled: Color {
         Color(UIColor(dark: "#7b8188", light: "#29415d"))
     }
+    public static var surfaceInfographicsColorBlue: Color {
+        Color(UIColor(dark: "#009ee2", light: "#009ee2"))
+    }
+    public static var surfaceInfographicsColorBluePale: Color {
+        Color(UIColor(dark: "#44c7ff", light: "#44c7ff"))
+    }
+    public static var surfaceInfographicsColorGray: Color {
+        Color(UIColor(dark: "#b6babe", light: "#989ea3"))
+    }
+    public static var surfaceInfographicsColorGreen: Color {
+        Color(UIColor(dark: "#00bc74", light: "#00bc74"))
+    }
+    public static var surfaceInfographicsColorGreenPale: Color {
+        Color(UIColor(dark: "#71ecbd", light: "#71ecbd"))
+    }
+    public static var surfaceInfographicsColorRed: Color {
+        Color(UIColor(dark: "#f54d28", light: "#f54d28"))
+    }
+    public static var surfaceInfographicsColorRedPale: Color {
+        Color(UIColor(dark: "#f78168", light: "#f78168"))
+    }
+    public static var surfaceInfographicsColorYellow: Color {
+        Color(UIColor(dark: "#f1b000", light: "#f1b000"))
+    }
+    public static var surfaceInfographicsColorYellowPale: Color {
+        Color(UIColor(dark: "#fdd468", light: "#fdd468"))
+    }
     public static var surfaceInfographicsDefault: Color {
-        Color(UIColor(dark: "#5d7b9c", light: "#a5b6ca"))
+        Color(UIColor(dark: "#3a5d85", light: "#3a5d85"))
     }
     public static var surfaceLevel1: Color {
         Color(UIColor(dark: "#2c3034", light: "#ffffff"))
@@ -224,12 +341,6 @@ extension Color {
     public static var surfaceLevel4: Color {
         Color(UIColor(dark: "#5d656d", light: "#b6babe"))
     }
-    public static var surfaceOpacityBlack400: Color {
-        Color(UIColor(dark: "#1c1e2166", light: "#1c1e2133"))
-    }
-    public static var surfaceOpacityBlack800: Color {
-        Color(UIColor(dark: "#1c1e21cc", light: "#1c1e21cc"))
-    }
     public static var surfaceOpacityBlackNone: Color {
         Color(UIColor(dark: "#1c1e2100", light: "#1c1e2100"))
     }
@@ -239,14 +350,35 @@ extension Color {
     public static var surfaceOpacityInfo: Color {
         Color(UIColor(dark: "#00aaff7f", light: "#00aaff7f"))
     }
-    public static var surfaceOpacityWarning: Color {
-        Color(UIColor(dark: "#ff80017f", light: "#ff80017f"))
+    public static var surfaceOpacityPrimaryDark200: Color {
+        Color(UIColor(dark: "#1c1e2133", light: "#1c1e210c"))
     }
-    public static var surfaceOpacityWhite400: Color {
+    public static var surfaceOpacityPrimaryDark400: Color {
+        Color(UIColor(dark: "#1c1e2166", light: "#1c1e2133"))
+    }
+    public static var surfaceOpacityPrimaryDark800: Color {
+        Color(UIColor(dark: "#1c1e21cc", light: "#1c1e217f"))
+    }
+    public static var surfaceOpacityPrimaryLight200: Color {
+        Color(UIColor(dark: "#f1f2f333", light: "#f1f2f333"))
+    }
+    public static var surfaceOpacityPrimaryLight400: Color {
         Color(UIColor(dark: "#f1f2f366", light: "#f1f2f366"))
     }
-    public static var surfaceOpacityWhite800: Color {
+    public static var surfaceOpacityPrimaryLight800: Color {
         Color(UIColor(dark: "#f1f2f3cc", light: "#f1f2f3cc"))
+    }
+    public static var surfaceOpacitySecondary500: Color {
+        Color(UIColor(dark: "#29415d7f", light: "#c9d4e07f"))
+    }
+    public static var surfaceOpacitySecondary700: Color {
+        Color(UIColor(dark: "#29415db2", light: "#c9d4e0b2"))
+    }
+    public static var surfaceOpacitySecondary900: Color {
+        Color(UIColor(dark: "#29415de5", light: "#c9d4e0e5"))
+    }
+    public static var surfaceOpacityWarning: Color {
+        Color(UIColor(dark: "#ff80017f", light: "#ff80017f"))
     }
     public static var surfaceOpacityWhiteNone: Color {
         Color(UIColor(dark: "#f1f2f300", light: "#f1f2f300"))
@@ -284,23 +416,14 @@ extension Color {
     public static var surfaceSuccess: Color {
         Color(UIColor(dark: "#01310e", light: "#e8fced"))
     }
-    public static var surfaceSuccessHover: Color {
-        Color(UIColor(dark: "#001807", light: "#cffbdb"))
-    }
-    public static var surfaceToggleGroupDefault: Color {
-        Color(UIColor(dark: "#1c1e2119", light: "#1c1e2119"))
-    }
     public static var surfaceWarning: Color {
         Color(UIColor(dark: "#331900", light: "#fff2e5"))
     }
-    public static var surfaceWarningHover: Color {
-        Color(UIColor(dark: "#190c00", light: "#ffe5cc"))
-    }
     public static var surfaceZones1Dark: Color {
-        Color(UIColor(dark: "#5d656d", light: "#5d656d"))
+        Color(UIColor(dark: "#5d656d", light: "#989ea3"))
     }
     public static var surfaceZones1Default: Color {
-        Color(UIColor(dark: "#989ea3", light: "#989ea3"))
+        Color(UIColor(dark: "#b6babe", light: "#b6babe"))
     }
     public static var surfaceZones2Dark: Color {
         Color(UIColor(dark: "#004766", light: "#004766"))
@@ -356,8 +479,11 @@ extension Color {
     public static var textOnActionLink: Color {
         Color(UIColor(dark: "#ffffff", light: "#000000"))
     }
+    public static var textOnActionLinkActive: Color {
+        Color(UIColor(dark: "#7a7e31", light: "#7a7e31"))
+    }
     public static var textOnActionLinkHover: Color {
-        Color(UIColor(dark: "#f4fc61", light: "#000000"))
+        Color(UIColor(dark: "#f4fc61", light: "#c3ca4e"))
     }
     public static var textOnActionOutline: Color {
         Color(UIColor(dark: "#f4fc61", light: "#7a7e31"))
@@ -380,14 +506,29 @@ extension Color {
     public static var textOnActionTransparent: Color {
         Color(UIColor(dark: "#ffffff", light: "#000000"))
     }
+    public static var textOnActionTransparentActive: Color {
+        Color(UIColor(dark: "#4d535a", light: "#b6babe"))
+    }
     public static var textOnActionTransparentError: Color {
-        Color(UIColor(dark: "#ff7a66", light: "#cc1b00"))
+        Color(UIColor(dark: "#ff2200", light: "#cc1b00"))
+    }
+    public static var textOnActionTransparentErrorActive: Color {
+        Color(UIColor(dark: "#ffa699", light: "#ff7a66"))
     }
     public static var textOnActionTransparentErrorHover: Color {
-        Color(UIColor(dark: "#ffa699", light: "#991400"))
+        Color(UIColor(dark: "#ff7a66", light: "#991400"))
+    }
+    public static var textOnActionTransparentHover: Color {
+        Color(UIColor(dark: "#b6babe", light: "#7b8188"))
     }
     public static var textOnActionTransparentInverted: Color {
         Color(UIColor(dark: "#000000", light: "#ffffff"))
+    }
+    public static var textOnActionTransparentInvertedActive: Color {
+        Color(UIColor(dark: "#ffffff", light: "#4d535a"))
+    }
+    public static var textOnActionTransparentInvertedHover: Color {
+        Color(UIColor(dark: "#5d656d", light: "#989ea3"))
     }
     public static var textOnActionWarning: Color {
         Color(UIColor(dark: "#ffcc99", light: "#994c00"))
@@ -441,8 +582,8 @@ public enum Design {
     public struct FontSize: Hashable, Sendable {
         public let value: CGFloat
         private init(_ value: CGFloat) { self.value = value }
-        /// 8.0
-        public static let bodyXSmall = Self(8.0)
+        /// 10.0
+        public static let bodyXSmall = Self(10.0)
         /// 12.0
         public static let bodySmall = Self(12.0)
         /// 16.0

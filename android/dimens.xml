@@ -10,7 +10,7 @@
     <dimen name="font_size_body_base">16dp</dimen>
     <dimen name="font_size_body_large">20dp</dimen>
     <dimen name="font_size_body_small">12dp</dimen>
-    <dimen name="font_size_body_xsmall">8dp</dimen>
+    <dimen name="font_size_body_xsmall">10dp</dimen>
     <dimen name="font_size_heading2x_large">32dp</dimen>
     <dimen name="font_size_heading3x_large">40dp</dimen>
     <dimen name="font_size_heading4x_large">48dp</dimen>
