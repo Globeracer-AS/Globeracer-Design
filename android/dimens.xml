@@ -3,6 +3,7 @@
     <dimen name="border_width_default">2dp</dimen>
     <dimen name="border_width_none">0dp</dimen>
     <dimen name="dropshadow_blur_default">8dp</dimen>
+    <dimen name="dropshadow_blur_sm">4dp</dimen>
     <dimen name="dropshadow_opacity">30dp</dimen>
     <dimen name="dropshadow_position_md">4dp</dimen>
     <dimen name="dropshadow_position_none">0dp</dimen>

@@ -68,6 +68,18 @@ extension Color {
     public static var borderInfographicsColorGreenPale: Color {
         Color(UIColor(dark: "#71ecbd", light: "#71ecbd"))
     }
+    public static var borderInfographicsColorPink: Color {
+        Color(UIColor(dark: "#e648b4", light: "#e648b4"))
+    }
+    public static var borderInfographicsColorPinkPale: Color {
+        Color(UIColor(dark: "#f596d7", light: "#f596d7"))
+    }
+    public static var borderInfographicsColorPurple: Color {
+        Color(UIColor(dark: "#8743fc", light: "#8743fc"))
+    }
+    public static var borderInfographicsColorPurplePale: Color {
+        Color(UIColor(dark: "#b185fc", light: "#b185fc"))
+    }
     public static var borderInfographicsColorRed: Color {
         Color(UIColor(dark: "#f54d28", light: "#f54d28"))
     }
@@ -82,6 +94,9 @@ extension Color {
     }
     public static var borderInfographicsDefault: Color {
         Color(UIColor(dark: "#3a5d85", light: "#3a5d85"))
+    }
+    public static var borderInfographicsIntervals: Color {
+        Color(UIColor(dark: "#ffffff", light: "#f1f2f3"))
     }
     public static var borderInfographicsTrack: Color {
         Color(UIColor(dark: "#f1f2f319", light: "#1c1e2119"))
@@ -130,6 +145,9 @@ extension Color {
     }
     public static var iconInfo: Color {
         Color(UIColor(dark: "#99ddff", light: "#00aaff"))
+    }
+    public static var iconLike: Color {
+        Color(UIColor(dark: "#f54d28", light: "#f54d28"))
     }
     public static var iconOnActionError: Color {
         Color(UIColor(dark: "#ff7a66", light: "#cc1b00"))
@@ -284,12 +302,6 @@ extension Color {
     public static var surfaceError: Color {
         Color(UIColor(dark: "#330600", light: "#fceae8"))
     }
-    public static var surfaceError2: Color {
-        Color(UIColor(dark: "#330600", light: "#fceae8"))
-    }
-    public static var surfaceErrorHover2: Color {
-        Color(UIColor(dark: "#190300", light: "#f9d6d1"))
-    }
     public static var surfaceInfo: Color {
         Color(UIColor(dark: "#004366", light: "#e5f6ff"))
     }
@@ -308,11 +320,29 @@ extension Color {
     public static var surfaceInfographicsColorGray: Color {
         Color(UIColor(dark: "#b6babe", light: "#989ea3"))
     }
+    public static var surfaceInfographicsColorGray2: Color {
+        Color(UIColor(dark: "#b6babe", light: "#989ea3"))
+    }
+    public static var surfaceInfographicsColorGrayPale: Color {
+        Color(UIColor(dark: "#e3e5e7", light: "#d4d6d8"))
+    }
     public static var surfaceInfographicsColorGreen: Color {
         Color(UIColor(dark: "#00bc74", light: "#00bc74"))
     }
     public static var surfaceInfographicsColorGreenPale: Color {
         Color(UIColor(dark: "#71ecbd", light: "#71ecbd"))
+    }
+    public static var surfaceInfographicsColorPink: Color {
+        Color(UIColor(dark: "#e648b4", light: "#e648b4"))
+    }
+    public static var surfaceInfographicsColorPinkPale: Color {
+        Color(UIColor(dark: "#f596d7", light: "#f596d7"))
+    }
+    public static var surfaceInfographicsColorPurple: Color {
+        Color(UIColor(dark: "#8743fc", light: "#8743fc"))
+    }
+    public static var surfaceInfographicsColorPurplePale: Color {
+        Color(UIColor(dark: "#b185fc", light: "#b185fc"))
     }
     public static var surfaceInfographicsColorRed: Color {
         Color(UIColor(dark: "#f54d28", light: "#f54d28"))
@@ -572,6 +602,8 @@ public enum Design {
         public static let positionNone = Self(0.0)
         /// 2.0
         public static let positionSm = Self(2.0)
+        /// 4.0
+        public static let blurSm = Self(4.0)
         /// 4.0
         public static let positionMd = Self(4.0)
         /// 8.0
