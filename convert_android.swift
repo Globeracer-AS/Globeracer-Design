@@ -48,23 +48,33 @@ guard let mapped = json["mapped"] as? [String: [String: String]],
     fatalError("Invalid JSON structure")
 }
 
-// MARK: - Generate colors.xml
-var colorsXML = """
+// MARK: - Generate light-colors.xml
+var lightColorsXML = """
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-
+<resources>\n
 """
 
 for (name, val) in mapped.sorted(by: { a, b in a.0 < b.0 }) {
     let light = sanitizeColor(val["light"] ?? "#FFFFFF")
-    let dark = sanitizeColor(val["dark"] ?? "#000000")
-    
-    colorsXML += """
-    <color name="\(name)">\(light)</color>
-    <!-- Dark variant: \(dark) -->
+    lightColorsXML += """
+    <color name="\(name)">\(light)</color>\n
 """
 }
-colorsXML += "\n</resources>\n"
+lightColorsXML += "\n</resources>\n"
+
+// MARK: - Generate dark-colors.xml
+var darkColorsXML = """
+<?xml version="1.0" encoding="utf-8"?>
+<resources>\n
+"""
+
+for (name, val) in mapped.sorted(by: { a, b in a.0 < b.0 }) {
+    let dark = sanitizeColor(val["dark"] ?? "#000000")
+    darkColorsXML += """
+    <color name="\(name)">\(dark)</color>\n
+"""
+}
+darkColorsXML += "\n</resources>\n"
 
 // MARK: - Generate dimens.xml
 var dimensXML = """
@@ -87,7 +97,8 @@ dimensXML += "</resources>\n"
 let fileManager = FileManager.default
 let base = fileManager.currentDirectoryPath
 
-try colorsXML.write(toFile: base + "/android/colors.xml", atomically: true, encoding: .utf8)
+try lightColorsXML.write(toFile: base + "/android/light-colors.xml", atomically: true, encoding: .utf8)
+try darkColorsXML.write(toFile: base + "/android/dark-colors.xml", atomically: true, encoding: .utf8)
 try dimensXML.write(toFile: base + "/android/dimens.xml", atomically: true, encoding: .utf8)
 
-print("✅ Android XML files created: android/colors.xml and android/dimens.xml")
+print("✅ Android XML files created: android/light-colors.xml, android/dark-colors.xml and android/dimens.xml")
