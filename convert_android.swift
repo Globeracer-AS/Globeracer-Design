@@ -97,8 +97,8 @@ dimensXML += "</resources>\n"
 let fileManager = FileManager.default
 let base = fileManager.currentDirectoryPath
 
-try lightColorsXML.write(toFile: base + "/android/light-colors.xml", atomically: true, encoding: .utf8)
-try darkColorsXML.write(toFile: base + "/android/dark-colors.xml", atomically: true, encoding: .utf8)
-try dimensXML.write(toFile: base + "/android/dimens.xml", atomically: true, encoding: .utf8)
+try lightColorsXML.write(toFile: base + "/android/res/values/colors.xml", atomically: true, encoding: .utf8)
+try darkColorsXML.write(toFile: base + "/android/res/values-night/colors.xml", atomically: true, encoding: .utf8)
+try dimensXML.write(toFile: base + "/android/res/values/dimens.xml", atomically: true, encoding: .utf8)
 
-print("✅ Android XML files created: android/light-colors.xml, android/dark-colors.xml and android/dimens.xml")
+print("✅ Android XML files created")
