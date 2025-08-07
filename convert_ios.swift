@@ -48,16 +48,27 @@ guard let mapped = json["mapped"] as? [String: [String: String]],
 
 // MARK: - Output Swift Code
 
-var output = "import SwiftUI\n\n"
+var output = "import SwiftUI\nimport UIKit\n\n"
 
-output += "\nextension Color {\n"
+output += "\nextension UIColor {\n"
 for (name, color) in mapped.sorted(by: { a, b in a.0 < b.0 }) {
     guard let light = color["light"], let dark = color["dark"] else {
         fatalError("Color '\(name)' missing either 'light' or 'dark'")
     }
     output += """
+    public static var \(name): UIColor {
+        UIColor(dark: "\(dark)", light: "\(light)")
+    }
+
+"""
+}
+output += "}\n\n"
+
+output += "\nextension Color {\n"
+for name in mapped.keys.sorted() {
+    output += """
     public static var \(name): Color {
-        Color(UIColor(dark: "\(dark)", light: "\(light)"))
+        Color(UIColor.\(name))
     }
 
 """
