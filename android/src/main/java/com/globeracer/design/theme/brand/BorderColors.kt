@@ -1,0 +1,111 @@
+package com.globeracer.design.theme.brand
+
+import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.staticCompositionLocalOf
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.ReadOnlyComposable
+import androidx.compose.ui.graphics.Color
+import androidx.compose.material3.MaterialTheme
+import com.globeracer.design.theme.*
+
+@Immutable
+data class BorderColors(
+    val borderPrimary: Color,
+    val borderSecondary: Color,
+    val borderInformation: Color,
+    val borderSuccess: Color,
+    val borderWarning: Color,
+    val borderError: Color,
+    val borderDisabled: Color,
+    val borderActionPrimary: Color,
+    val borderActionPrimaryHover: Color,
+    val borderFocus: Color,
+    val borderActionSecondary: Color,
+    val borderActionSecondaryHover: Color,
+    val borderActionOutline: Color,
+    val borderErrorHover: Color,
+    val borderSuccessHover: Color,
+    val borderWarningHover: Color,
+    val borderHover: Color,
+    val borderFocusSecondary: Color,
+    val borderActionOutlineNeutral: Color,
+    val borderDecorationDefault: Color,
+    val borderDecorationDefaultInverted: Color,
+    val borderDecorationDefaultDisabled: Color,
+    val borderDecorationDefaultDisabledInverted: Color,
+    val borderOpacityPrimary: Color,
+    val borderInfographicsDefault: Color,
+    val borderOpacityPrimaryInverted: Color,
+    val borderOpacityPrimaryLight: Color,
+    val borderOpacityPrimaryDark: Color,
+    val borderInfographicsAccent: Color,
+    val borderInfographicsTrack: Color,
+    val borderInfographicsColorRed: Color,
+    val borderInfographicsColorYellow: Color,
+    val borderInfographicsColorGreen: Color,
+    val borderInfographicsColorBlue: Color,
+    val borderInfographicsColorGray: Color,
+    val borderInfographicsColorRedPale: Color,
+    val borderInfographicsColorGreenPale: Color,
+    val borderInfographicsColorBluePale: Color,
+    val borderInfographicsColorYellowPale: Color,
+    val borderInfographicsColorPurplePale: Color,
+    val borderInfographicsColorPurple: Color,
+    val borderInfographicsColorPinkPale: Color,
+    val borderInfographicsColorPink: Color,
+    val borderInfographicsIntervals: Color,
+    val borderInfographicsColorGrayPale: Color,
+)
+
+val LocalBorderColors = staticCompositionLocalOf { BorderColors(
+    borderPrimary = borderPrimaryLight,
+    borderSecondary = borderSecondaryLight,
+    borderInformation = borderInformationLight,
+    borderSuccess = borderSuccessLight,
+    borderWarning = borderWarningLight,
+    borderError = borderErrorLight,
+    borderDisabled = borderDisabledLight,
+    borderActionPrimary = borderActionPrimaryLight,
+    borderActionPrimaryHover = borderActionPrimaryHoverLight,
+    borderFocus = borderFocusLight,
+    borderActionSecondary = borderActionSecondaryLight,
+    borderActionSecondaryHover = borderActionSecondaryHoverLight,
+    borderActionOutline = borderActionOutlineLight,
+    borderErrorHover = borderErrorHoverLight,
+    borderSuccessHover = borderSuccessHoverLight,
+    borderWarningHover = borderWarningHoverLight,
+    borderHover = borderHoverLight,
+    borderFocusSecondary = borderFocusSecondaryLight,
+    borderActionOutlineNeutral = borderActionOutlineNeutralLight,
+    borderDecorationDefault = borderDecorationDefaultLight,
+    borderDecorationDefaultInverted = borderDecorationDefaultInvertedLight,
+    borderDecorationDefaultDisabled = borderDecorationDefaultDisabledLight,
+    borderDecorationDefaultDisabledInverted = borderDecorationDefaultDisabledInvertedLight,
+    borderOpacityPrimary = borderOpacityPrimaryLight,
+    borderInfographicsDefault = borderInfographicsDefaultLight,
+    borderOpacityPrimaryInverted = borderOpacityPrimaryInvertedLight,
+    borderOpacityPrimaryLight = borderOpacityPrimaryLightLight,
+    borderOpacityPrimaryDark = borderOpacityPrimaryDarkLight,
+    borderInfographicsAccent = borderInfographicsAccentLight,
+    borderInfographicsTrack = borderInfographicsTrackLight,
+    borderInfographicsColorRed = borderInfographicsColorRedLight,
+    borderInfographicsColorYellow = borderInfographicsColorYellowLight,
+    borderInfographicsColorGreen = borderInfographicsColorGreenLight,
+    borderInfographicsColorBlue = borderInfographicsColorBlueLight,
+    borderInfographicsColorGray = borderInfographicsColorGrayLight,
+    borderInfographicsColorRedPale = borderInfographicsColorRedPaleLight,
+    borderInfographicsColorGreenPale = borderInfographicsColorGreenPaleLight,
+    borderInfographicsColorBluePale = borderInfographicsColorBluePaleLight,
+    borderInfographicsColorYellowPale = borderInfographicsColorYellowPaleLight,
+    borderInfographicsColorPurplePale = borderInfographicsColorPurplePaleLight,
+    borderInfographicsColorPurple = borderInfographicsColorPurpleLight,
+    borderInfographicsColorPinkPale = borderInfographicsColorPinkPaleLight,
+    borderInfographicsColorPink = borderInfographicsColorPinkLight,
+    borderInfographicsIntervals = borderInfographicsIntervalsLight,
+    borderInfographicsColorGrayPale = borderInfographicsColorGrayPaleLight,
+)}
+
+val MaterialTheme.borderColors: BorderColors
+    @Composable
+    @ReadOnlyComposable
+    get() = LocalBorderColors.current
