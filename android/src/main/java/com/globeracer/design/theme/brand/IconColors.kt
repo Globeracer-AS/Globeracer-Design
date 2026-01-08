@@ -73,7 +73,7 @@ val LocalIconColors = staticCompositionLocalOf { IconColors(
     iconLike = iconLikeLight,
 )}
 
-val MaterialTheme.IconColors: IconColors
+val MaterialTheme.iconColors: IconColors
     @Composable
     @ReadOnlyComposable
     get() = LocalIconColors.current

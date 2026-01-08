@@ -191,7 +191,7 @@ val LocalSurfaceColors = staticCompositionLocalOf { SurfaceColors(
     surfaceOpacityPrimaryDark100 = surfaceOpacityPrimaryDark100Light,
 )}
 
-val MaterialTheme.SurfaceColors: SurfaceColors
+val MaterialTheme.surfaceColors: SurfaceColors
     @Composable
     @ReadOnlyComposable
     get() = LocalSurfaceColors.current

@@ -85,7 +85,7 @@ val LocalTextColors = staticCompositionLocalOf { TextColors(
     textOnActionLinkActive = textOnActionLinkActiveLight,
 )}
 
-val MaterialTheme.TextColors: TextColors
+val MaterialTheme.textColors: TextColors
     @Composable
     @ReadOnlyComposable
     get() = LocalTextColors.current

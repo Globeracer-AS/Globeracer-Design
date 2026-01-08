@@ -105,7 +105,7 @@ val LocalBorderColors = staticCompositionLocalOf { BorderColors(
     borderInfographicsColorGrayPale = borderInfographicsColorGrayPaleLight,
 )}
 
-val MaterialTheme.BorderColors: BorderColors
+val MaterialTheme.borderColors: BorderColors
     @Composable
     @ReadOnlyComposable
     get() = LocalBorderColors.current

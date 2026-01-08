@@ -130,6 +130,7 @@ generate_color_class() {
   shift
   local COLOR_LIST=("$@")
   local FILE="$BRAND_DIR/$CLASS_NAME.kt"
+  local PROPERTY_NAME="$(tr '[:upper:]' '[:lower:]' <<< ${CLASS_NAME:0:1})${CLASS_NAME:1}"
 
   echo "package $PACKAGE.theme.brand
 
@@ -158,7 +159,7 @@ val Local$CLASS_NAME = staticCompositionLocalOf { $CLASS_NAME(" >> "$FILE"
   echo ")}" >> "$FILE"
 
   echo "
-val MaterialTheme.$CLASS_NAME: $CLASS_NAME
+val MaterialTheme.$PROPERTY_NAME: $CLASS_NAME
     @Composable
     @ReadOnlyComposable
     get() = Local$CLASS_NAME.current" >> "$FILE"
