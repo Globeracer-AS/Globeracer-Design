@@ -281,3 +281,46 @@ fun GloberacerTheme(
     }
 }
 EOF
+
+FONT_SRC_DIR="$(dirname "$0")/fonts"
+FONT_DIR="$ROOT/src/main/res/font"
+mkdir -p "$FONT_DIR"
+
+for FONT_PATH in "$FONT_SRC_DIR"/*; do
+    if [[ -f "$FONT_PATH" ]]; then
+        FONT_NAME="$(basename "$FONT_PATH" .ttf | tr '[:upper:]' '[:lower:]' | tr '-' '_' )"
+        cp "$FONT_PATH" "$FONT_DIR/$FONT_NAME.ttf"
+    fi
+done
+
+FONT_FILE="$THEME_DIR/Fonts.kt"
+echo "package $PACKAGE.theme
+
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import $PACKAGE.R
+" > "$FONT_FILE"
+
+declare -A FONT_FAMILIES
+
+for FONT_PATH in "$FONT_SRC_DIR"/*; do
+    if [[ -f "$FONT_PATH" ]]; then
+        FILE_NAME="$(basename "$FONT_PATH" .ttf)"
+        SNAKE_NAME="$(echo "$FILE_NAME" | tr '[:upper:]' '[:lower:]' | tr '-' '_' )"
+        FAMILY_NAME="$(echo "$FILE_NAME" | cut -d'-' -f1 | cut -d'_' -f1)"
+        FAMILY_NAME_CAP="$(tr '[:lower:]' '[:upper:]' <<< ${FAMILY_NAME:0:1})${FAMILY_NAME:1}"
+        FONT_FAMILIES["$FAMILY_NAME_CAP"]+="$SNAKE_NAME "
+    fi
+done
+
+for FAMILY in "${!FONT_FAMILIES[@]}"; do
+    echo "val $FAMILY = FontFamily(" >> "$FONT_FILE"
+    for FONT in ${FONT_FAMILIES[$FAMILY]}; do
+        WEIGHT="FontWeight.Normal"
+        [[ "$FONT" =~ bold ]] && WEIGHT="FontWeight.Bold"
+        [[ "$FONT" =~ medium ]] && WEIGHT="FontWeight.Medium"
+        echo "    Font(resId = R.font.$FONT, weight = $WEIGHT)," >> "$FONT_FILE"
+    done
+    echo ")" >> "$FONT_FILE"
+done

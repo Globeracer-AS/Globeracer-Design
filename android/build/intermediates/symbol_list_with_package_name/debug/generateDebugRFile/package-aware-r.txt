@@ -1,1 +1,2 @@
 com.globeracer.design
+font rethinksans_variablefont_wght
