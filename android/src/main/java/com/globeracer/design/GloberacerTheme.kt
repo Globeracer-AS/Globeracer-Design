@@ -1,8 +1,6 @@
 package com.globeracer.design
 
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import com.globeracer.design.theme.brand.*
@@ -437,7 +435,6 @@ fun GloberacerTheme(
         LocalDimens provides Dimens(),
     ) {
         MaterialTheme(
-            colorScheme = if (darkTheme) darkColorScheme() else lightColorScheme(),
             typography = MaterialTheme.typography,
             content = content,
         )

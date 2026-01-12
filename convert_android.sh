@@ -54,15 +54,29 @@ EOF
 
 sanitize_color() {
   local hex="${1#\#}"
-  if [ ${#hex} -eq 3 ]; then
-    echo "FF${hex:0:1}${hex:0:1}${hex:1:1}${hex:1:1}${hex:2:1}${hex:2:1}"
-  elif [ ${#hex} -eq 6 ]; then
-    echo "FF$hex"
-  elif [ ${#hex} -eq 8 ]; then
-    echo "$hex"
-  else
-    echo "FFFFFFFF"
+  local result
+
+  case "${#hex}" in
+    3)
+      result="FF${hex:0:1}${hex:0:1}${hex:1:1}${hex:1:1}${hex:2:1}${hex:2:1}"
+      ;;
+    6)
+      result="FF$hex"
+      ;;
+    8)
+      result="${hex:6:2}${hex:0:2}${hex:2:2}${hex:4:2}"
+      ;;
+    *)
+      result="FFFFFFFF"
+      ;;
+  esac
+
+  local rgb="${result:2:6}"
+  if [[ "${rgb^^}" == "FFFFFF" ]]; then
+    result="FFFFFFFF"
   fi
+
+  echo "$result"
 }
 
 array_contains() {
@@ -210,8 +224,6 @@ cat > "$JAVA_DIR/GloberacerTheme.kt" << EOF
 package $PACKAGE
 
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import com.globeracer.design.theme.brand.*
@@ -262,7 +274,6 @@ fun GloberacerTheme(
         LocalDimens provides Dimens(),
     ) {
         MaterialTheme(
-            colorScheme = if (darkTheme) darkColorScheme() else lightColorScheme(),
             typography = MaterialTheme.typography,
             content = content,
         )
