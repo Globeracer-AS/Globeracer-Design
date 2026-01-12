@@ -223,6 +223,7 @@ EOF
 cat > "$JAVA_DIR/GloberacerTheme.kt" << EOF
 package $PACKAGE
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -258,7 +259,7 @@ cat >> "$JAVA_DIR/GloberacerTheme.kt" << EOF
 
 @Composable
 fun GloberacerTheme(
-    darkTheme: Boolean,
+    darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
     val textColors = if (darkTheme) TextColorsDark else TextColorsLight

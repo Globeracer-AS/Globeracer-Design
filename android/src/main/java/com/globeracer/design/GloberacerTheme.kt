@@ -1,5 +1,6 @@
 package com.globeracer.design
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -419,7 +420,7 @@ val IconColorsDark = IconColors(
 
 @Composable
 fun GloberacerTheme(
-    darkTheme: Boolean,
+    darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
     val textColors = if (darkTheme) TextColorsDark else TextColorsLight
