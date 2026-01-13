@@ -207,7 +207,7 @@ while IFS= read -r line; do
   if [[ $line =~ \"mobile\"[[:space:]]*:[[:space:]]*([0-9]+(\.[0-9]+)?) ]]; then
     VALUE="${BASH_REMATCH[1]}"
 
-    if [[ "$RAW_NAME" == fontSize* ]]; then
+    if [[ "$RAW_NAME" == fontSize* || "$RAW_NAME" == lineHeight* ]]; then
       echo "    val $RAW_NAME: TextUnit = ${VALUE}.sp," >> "$THEME_DIR/Dimens.kt"
     else
       echo "    val $RAW_NAME: Dp = ${VALUE}.dp," >> "$THEME_DIR/Dimens.kt"
