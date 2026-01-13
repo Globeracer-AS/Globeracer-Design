@@ -6,20 +6,22 @@ import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Immutable
 data class Dimens(
-    val fontSizeBodyBase: Dp = 16.dp,
-    val fontSizeBodySmall: Dp = 14.dp,
-    val fontSizeBodyLarge: Dp = 20.dp,
-    val fontSizeHeadingXLarge: Dp = 24.dp,
-    val fontSizeHeading2xLarge: Dp = 32.dp,
-    val fontSizeHeading3xLarge: Dp = 40.dp,
-    val fontSizeHeading4xLarge: Dp = 48.dp,
-    val fontSizeHeading5xLarge: Dp = 64.dp,
-    val fontSizeBodyXSmall: Dp = 12.dp,
-    val fontSizeHeadingLarge: Dp = 20.dp,
+    val fontSizeBodyBase: TextUnit = 16.sp,
+    val fontSizeBodySmall: TextUnit = 14.sp,
+    val fontSizeBodyLarge: TextUnit = 20.sp,
+    val fontSizeHeadingXLarge: TextUnit = 24.sp,
+    val fontSizeHeading2xLarge: TextUnit = 32.sp,
+    val fontSizeHeading3xLarge: TextUnit = 40.sp,
+    val fontSizeHeading4xLarge: TextUnit = 48.sp,
+    val fontSizeHeading5xLarge: TextUnit = 64.sp,
+    val fontSizeBodyXSmall: TextUnit = 12.sp,
+    val fontSizeHeadingLarge: TextUnit = 20.sp,
     val lineHeightBodyXSm: Dp = 10.dp,
     val lineHeightBodyMd: Dp = 18.dp,
     val lineHeightBodySm: Dp = 14.dp,

@@ -192,7 +192,9 @@ import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Immutable
 data class Dimens(" > "$THEME_DIR/Dimens.kt"
@@ -204,7 +206,13 @@ while IFS= read -r line; do
 
   if [[ $line =~ \"mobile\"[[:space:]]*:[[:space:]]*([0-9]+(\.[0-9]+)?) ]]; then
     VALUE="${BASH_REMATCH[1]}"
-    echo "    val $RAW_NAME: Dp = ${VALUE}.dp," >> "$THEME_DIR/Dimens.kt"
+
+    if [[ "$RAW_NAME" == fontSize* ]]; then
+      echo "    val $RAW_NAME: TextUnit = ${VALUE}.sp," >> "$THEME_DIR/Dimens.kt"
+    else
+      echo "    val $RAW_NAME: Dp = ${VALUE}.dp," >> "$THEME_DIR/Dimens.kt"
+    fi
+
     RAW_NAME=""
   fi
 done < "$TOKENS"
