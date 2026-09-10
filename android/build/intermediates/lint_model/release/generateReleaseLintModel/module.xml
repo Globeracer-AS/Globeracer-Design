@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/Users/oleksolv/Projects/mygom/globracer/Globeracer-Android/globeracer-design/android"
+    name=":globeracer-design"
+    type="LIBRARY"
+    maven="Globeracer:globeracer-design:unspecified"
+    agpVersion="8.9.1"
+    buildFolder="build"
+    bootClassPath="/Users/oleksolv/Library/Android/sdk/platforms/android-35/android.jar:/Users/oleksolv/Library/Android/sdk/build-tools/35.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
