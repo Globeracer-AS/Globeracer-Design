@@ -55,7 +55,7 @@ extension UIColor {
         UIColor(dark: "#f4fc61", light: "#f4fc61")
     }
     public static var borderInfographicsColorBlue: UIColor {
-        UIColor(dark: "#009ee2", light: "#009ee2")
+        UIColor(dark: "#009fe3", light: "#009fe3")
     }
     public static var borderInfographicsColorBluePale: UIColor {
         UIColor(dark: "#44c7ff", light: "#44c7ff")
@@ -316,7 +316,7 @@ extension UIColor {
         UIColor(dark: "#7b8188", light: "#29415d")
     }
     public static var surfaceInfographicsColorBlue: UIColor {
-        UIColor(dark: "#009ee2", light: "#009ee2")
+        UIColor(dark: "#009fe3", light: "#009fe3")
     }
     public static var surfaceInfographicsColorBluePale: UIColor {
         UIColor(dark: "#44c7ff", light: "#44c7ff")
@@ -463,16 +463,16 @@ extension UIColor {
         UIColor(dark: "#331900", light: "#fff2e5")
     }
     public static var surfaceZones1Dark: UIColor {
-        UIColor(dark: "#5d656d", light: "#989ea3")
+        UIColor(dark: "#56585a", light: "#56585a")
     }
     public static var surfaceZones1Default: UIColor {
-        UIColor(dark: "#b6babe", light: "#b6babe")
+        UIColor(dark: "#d4d6d8", light: "#d4d6d8")
     }
     public static var surfaceZones2Dark: UIColor {
         UIColor(dark: "#004766", light: "#004766")
     }
     public static var surfaceZones2Default: UIColor {
-        UIColor(dark: "#009ee2", light: "#009ee2")
+        UIColor(dark: "#009fe3", light: "#009fe3")
     }
     public static var surfaceZones3Dark: UIColor {
         UIColor(dark: "#005c39", light: "#005c39")
@@ -487,7 +487,7 @@ extension UIColor {
         UIColor(dark: "#f1b000", light: "#f1b000")
     }
     public static var surfaceZones5Dark: UIColor {
-        UIColor(dark: "#611504", light: "#611504")
+        UIColor(dark: "#611505", light: "#611505")
     }
     public static var surfaceZones5Default: UIColor {
         UIColor(dark: "#f54d28", light: "#f54d28")
